@@ -1,0 +1,12 @@
+Group A:
+ID: 1234, Name: Haa, Jockey: Sam, Age: 2, Wins: 2, Compete: 35, Breed: Mustang, Group: A
+
+Group B:
+ID: 2345, Name: Jim, Jockey: Jhon, Age: 4, Wins: 2, Compete: 65, Breed: msm, Group: B
+
+Group C:
+ID: 647, Name: jhh, Jockey: hdjh, Age: 8, Wins: 2, Compete: 35, Breed: hadjfh, Group: C
+
+Group D:
+ID: 7584, Name: hjdjh, Jockey: dkksd, Age: 7, Wins: 2, Compete: 7, Breed: kdskd, Group: D
+

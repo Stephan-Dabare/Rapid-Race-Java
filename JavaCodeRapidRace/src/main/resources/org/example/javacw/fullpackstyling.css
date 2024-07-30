@@ -1,0 +1,64 @@
+.button1
+{
+-fx-background-color : #35635b;
+-fx-background-radius :  30 0 0 30;
+}
+.button1:hover
+{
+-fx-background-color : #529471 ;
+-fx-background-radius :  30 0 0 30;
+}
+.button1:pressed
+{
+-fx-background-color : #a3cd9e;
+-fx-background-radius :  30 0 0 30;
+}
+
+.button2
+{
+-fx-background-color : #e5f1e3;
+-fx-background-radius :  20;
+}
+.button2:hover
+{
+-fx-background-color : #FFFFFF;
+-fx-background-radius :  20;
+}
+.button2:pressed
+{
+-fx-background-color : #a3cd9e;
+-fx-background-radius :  20;
+}
+
+.button3
+{
+    -fx-background-color : #35635b;
+    -fx-background-radius :  20;
+}
+.button3:hover
+{
+    -fx-background-color : #FFFFFF;
+    -fx-background-radius :  20;
+}
+.button3:pressed
+{
+    -fx-background-color : #a3cd9e ;
+    -fx-background-radius :  20;
+}
+
+
+.button5
+{
+    -fx-background-color : #35635b;
+    -fx-background-radius :  30 0 0 30;
+}
+.button5:hover
+{
+    -fx-background-color : #a3cd9e ;
+    -fx-background-radius :  30 0 0 30;
+}
+.button5:pressed
+{
+    -fx-background-color : #e5f1e3 ;
+    -fx-background-radius :  30 0 0 30;
+}

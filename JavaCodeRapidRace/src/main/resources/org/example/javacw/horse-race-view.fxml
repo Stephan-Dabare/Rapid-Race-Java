@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="658.0" prefWidth="1339.0" style="-fx-background-color: #529471;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javacw.HorseRaceController">
+   <children>
+      <AnchorPane prefHeight="664.0" prefWidth="270.0" style="-fx-background-color: #35635b;" AnchorPane.bottomAnchor="-1.0" AnchorPane.topAnchor="-5.0">
+         <children>
+            <VBox layoutY="184.0" prefHeight="173.0" prefWidth="270.0" AnchorPane.bottomAnchor="303.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="184.0">
+               <children>
+                  <Button fx:id="btnBackToMain" mnemonicParsing="false" onAction="#goToMain" prefHeight="43.0" prefWidth="270.0" styleClass="button1" stylesheets="@fullpackstyling.css" text="Return to Main Page" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnSelectHorse" mnemonicParsing="false" onAction="#selectHorsesRace" prefHeight="43.0" prefWidth="270.0" styleClass="button1" stylesheets="@fullpackstyling.css" text="Choose Horses for Finals" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <Pane layoutY="65.0" prefHeight="53.0" prefWidth="270.0" style="-fx-background-color: #a3cd9e; -fx-background-radius: 30 0 0 30;">
+               <children>
+                  <Label alignment="TOP_LEFT" layoutX="103.0" layoutY="13.0" text="Rapid Race" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri" size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="43.0" fitWidth="48.0" layoutX="44.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/logoWhite.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <ImageView fitHeight="280.0" fitWidth="219.0" layoutX="30.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/119.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="78.0" layoutY="124.0" text="Ride the Future" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="585.0" layoutY="-393.0" prefHeight="480.0" prefWidth="663.0" rotate="-50.2" style="-fx-background-color: #35635b; -fx-background-radius: 30;" />
+      <TableView fx:id="tableView" layoutX="468.0" layoutY="102.0" prefHeight="173.0" prefWidth="652.0" style="-fx-background-color: #e5f1e3;">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="86.0" style="-fx-background-color: #7ac38f;" text="Horse ID" />
+            <TableColumn fx:id="colName" prefWidth="102.0" style="-fx-background-color: #b1e9a3;" text="Horse Name" />
+            <TableColumn fx:id="colJockey" prefWidth="101.0" style="-fx-background-color: #7ac38f;" text="Jockey Name" />
+            <TableColumn fx:id="colBreed" prefWidth="92.0" style="-fx-background-color: #b1e9a3;" text="Breed" />
+            <TableColumn fx:id="colWins" prefWidth="86.0" style="-fx-background-color: #7ac38f;" text="Wins" />
+            <TableColumn fx:id="colAge" prefWidth="103.0" style="-fx-background-color: #b1e9a3;" text="Horse Age" />
+            <TableColumn fx:id="colGroup" prefWidth="81.0" style="-fx-background-color: #7ac38f;" text="Group" />
+         </columns>
+      </TableView>
+      <Pane layoutX="293.0" layoutY="311.0" prefHeight="320.0" prefWidth="1030.0" style="-fx-background-color: #a3cd9e;" AnchorPane.leftAnchor="293.0" AnchorPane.rightAnchor="16.0">
+         <children>
+            <TableView fx:id="tableViewWinHorse" layoutX="26.0" layoutY="120.0" prefHeight="159.0" prefWidth="684.0" style="-fx-background-color: #e5f1e3;">
+               <columns>
+                  <TableColumn fx:id="colPlace" prefWidth="86.0" style="-fx-background-color: #7ac38f;" text="Place" />
+                  <TableColumn fx:id="colTime" prefWidth="90.0" style="-fx-background-color: #b1e9a3;" text="Time" />
+                  <TableColumn fx:id="colWinId" prefWidth="93.0" style="-fx-background-color: #7ac38f;" text="Horse ID" />
+                  <TableColumn fx:id="colWinName" prefWidth="94.0" style="-fx-background-color: #b1e9a3;" text="Horse Name" />
+                  <TableColumn fx:id="colWinJockey" prefWidth="93.0" style="-fx-background-color: #7ac38f;" text="Jockey Name" />
+                  <TableColumn fx:id="colWinBreed" prefWidth="75.0" style="-fx-background-color: #b1e9a3;" text="Breed " />
+                  <TableColumn fx:id="colWinAge" style="-fx-background-color: #7ac38f;" text="Horse Age" />
+                  <TableColumn fx:id="colWinGroup" prefWidth="75.0" style="-fx-background-color: #b1e9a3;" text="Group" />
+               </columns>
+            </TableView>
+            <BarChart fx:id="raceTimeChart" layoutX="734.0" layoutY="120.0" prefHeight="159.0" prefWidth="258.0" style="-fx-background-color: #e5f1e3;">
+               <xAxis>
+                  <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis fx:id="yAxis" side="LEFT" />
+               </yAxis>
+            </BarChart>
+            <Button fx:id="btnRaceBegin" layoutX="434.0" layoutY="21.0" mnemonicParsing="false" onAction="#raceBegin" prefHeight="43.0" prefWidth="162.0" styleClass="button2" stylesheets="@fullpackstyling.css" text="Start Race" textFill="#35635b">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="378.0" layoutY="76.0" text="Race Recap: Results Summary">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="389.0" layoutY="34.0" prefHeight="53.0" prefWidth="804.0">
+         <children>
+            <Label layoutX="231.0" layoutY="14.0" text="Champions' Circle - The Top Contenders" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

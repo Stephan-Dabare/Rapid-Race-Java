@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1315.0" style="-fx-background-color: #a3cd9e;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javacw.MainController">
+   <children>
+      <AnchorPane layoutY="-5.0" prefHeight="506.0" prefWidth="207.0" style="-fx-background-color: #35635b;" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="-5.0">
+         <children>
+            <Button fx:id="btnRaceStart" layoutX="26.0" layoutY="469.0" mnemonicParsing="false" onAction="#goToHorseRace" prefHeight="43.0" prefWidth="218.0" styleClass="button2" stylesheets="@fullpackstyling.css" text="Start Race" textFill="#35635b">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Button>
+            <VBox layoutY="214.0" prefHeight="240.0" prefWidth="270.0" AnchorPane.bottomAnchor="212.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="214.0">
+               <children>
+                  <Button fx:id="btnUpdate" mnemonicParsing="false" onAction="#updateHorse" prefHeight="43.0" prefWidth="313.0" styleClass="button1" stylesheets="@fullpackstyling.css" text="Edit Horse Details" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnView" mnemonicParsing="false" onAction="#goToViewDetails" prefHeight="43.0" prefWidth="295.0" styleClass="button1" stylesheets="@fullpackstyling.css" text="View Info" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnSaveFile" mnemonicParsing="false" onAction="#saveToFile" prefHeight="43.0" prefWidth="289.0" styleClass="button1" stylesheets="@fullpackstyling.css" text="Export to Text" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnOpenText" mnemonicParsing="false" onAction="#openTextFile" prefHeight="43.0" prefWidth="279.0" styleClass="button1" stylesheets="@fullpackstyling.css" text="Open File" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <Label layoutX="78.0" layoutY="117.0" text="Ride the Future" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Pane layoutY="57.0" prefHeight="53.0" prefWidth="270.0" style="-fx-background-color: #a3cd9e; -fx-background-radius: 30 0 0 30;">
+               <children>
+                  <Label alignment="TOP_LEFT" layoutX="103.0" layoutY="13.0" text="Rapid Race" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri" size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="43.0" fitWidth="48.0" layoutX="44.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/logoWhite.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="270.0" prefHeight="660.0" prefWidth="337.0" style="-fx-background-color: #529471;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="87.0" layoutY="38.0" text="Create Horse Profile" textFill="#e5f1e3">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+            <VBox layoutX="37.0" layoutY="92.0" prefHeight="477.0" prefWidth="264.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="207.0" text="Horse ID" textFill="WHITE" />
+                  <TextField fx:id="textId" style="-fx-background-color: #e5f1e3;" />
+                  <Pane prefHeight="10.0" prefWidth="218.0" />
+                  <Label prefHeight="17.0" prefWidth="207.0" text="Horse Name" textFill="WHITE" />
+                  <TextField fx:id="textName" style="-fx-background-color: #e5f1e3;" />
+                  <Pane prefHeight="9.0" prefWidth="218.0" />
+                  <Label prefHeight="17.0" prefWidth="207.0" text="Jockey Name" textFill="WHITE" />
+                  <TextField fx:id="textJockey" style="-fx-background-color: #e5f1e3;" />
+                  <Pane prefHeight="10.0" prefWidth="218.0" />
+                  <Label prefHeight="17.0" prefWidth="207.0" text="Horse Age" textFill="WHITE" />
+                  <TextField fx:id="textAge" style="-fx-background-color: #e5f1e3;" />
+                  <Pane prefHeight="10.0" prefWidth="218.0" />
+                  <Label prefHeight="17.0" prefWidth="207.0" text="Horse Breed" textFill="WHITE" />
+                  <TextField fx:id="textBreed" style="-fx-background-color: #e5f1e3;" />
+                  <Pane prefHeight="11.0" prefWidth="218.0" />
+                  <Label prefHeight="17.0" prefWidth="207.0" text="Races Competed" textFill="WHITE" />
+                  <TextField fx:id="textCompete" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #e5f1e3;" />
+                  <Pane prefHeight="11.0" prefWidth="218.0" />
+                  <Label prefHeight="17.0" prefWidth="207.0" text="Wins" textFill="WHITE" />
+                  <TextField fx:id="textWin" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #e5f1e3;" />
+                  <Pane prefHeight="9.0" prefWidth="218.0" />
+                  <Label prefHeight="17.0" prefWidth="207.0" text="Horse Group (A, B, C, D)" textFill="WHITE" />
+                  <TextField fx:id="textGroup" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #e5f1e3;" />
+                  <Pane prefHeight="9.0" prefWidth="218.0" />
+                  <Label prefHeight="17.0" prefWidth="207.0" text="Upload Image" textFill="WHITE" />
+                  <Button fx:id="btnUploadImage" alignment="CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#uploadImage" prefHeight="24.0" prefWidth="265.0" style="-fx-background-color: #e5f1e3;" text="Upload">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Button>
+                  <Pane prefHeight="23.0" prefWidth="201.0">
+                     <children>
+                        <CheckBox fx:id="checkImage" layoutY="3.0" mnemonicParsing="false" text="Image " textFill="WHITE" />
+                     </children></Pane>
+               </children>
+            </VBox>
+            <Button fx:id="btnSubmit" layoutY="582.0" mnemonicParsing="false" onAction="#submit" prefHeight="43.0" prefWidth="337.0" styleClass="button5" stylesheets="@fullpackstyling.css" text="Submit" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="updateLabel" layoutX="114.0" layoutY="61.0" text="Details Updatable" textFill="WHITE" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Pane layoutX="533.0" layoutY="-166.0" prefHeight="286.0" prefWidth="422.0" rotate="31.0" style="-fx-background-color: #35635b; -fx-background-radius: 30;" />
+      <Pane layoutX="731.0" layoutY="584.0" prefHeight="434.0" prefWidth="626.0" rotate="-45.0" style="-fx-background-color: #35635b; -fx-background-radius: 30;" />
+      <TableView fx:id="tableHorseDetails" layoutX="671.0" layoutY="68.0" prefHeight="491.0" prefWidth="593.0" style="-fx-background-color: #e5f1e3;" AnchorPane.leftAnchor="671.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="75.0" style="-fx-background-color: #7ac38f;" text="Horse ID" />
+            <TableColumn fx:id="colName" prefWidth="105.0" sortable="false" style="-fx-background-color: #b1e9a3;" text="Horse Name" />
+            <TableColumn fx:id="colJockey" prefWidth="91.0" sortable="false" style="-fx-background-color: #7ac38f;" text="Jockey Name" />
+            <TableColumn fx:id="colAge" prefWidth="58.0" sortable="false" style="-fx-background-color: #b1e9a3;" text="Age" />
+            <TableColumn fx:id="colBreed" prefWidth="94.0" sortable="false" style="-fx-background-color: #7ac38f;" text="Breed" />
+            <TableColumn fx:id="colRecords" prefWidth="95.0" sortable="false" style="-fx-background-color: #b1e9a3;" text="Race Records" />
+            <TableColumn fx:id="colGroup" prefWidth="74.0" sortable="false" style="-fx-background-color: #7ac38f;" text="Group" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnRemove" layoutX="683.0" layoutY="584.0" mnemonicParsing="false" onAction="#removeHorse" prefHeight="34.0" prefWidth="154.0" styleClass="button2" stylesheets="@fullpackstyling.css" text="Delete Selected Horse" textFill="#35635b" AnchorPane.leftAnchor="683.0">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
